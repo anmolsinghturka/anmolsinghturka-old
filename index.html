@@ -1,7 +1,4 @@
-﻿
-down vote
-accepted
-<!--
+﻿<!--
 Copyright 2018 Google LLC
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,41 +16,148 @@ limitations under the License.
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Google Sheets API Quickstart</title>
+    <title>BSN</title>
     <meta charset='utf-8' />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
   <body>
-    <p>Google Sheets API Quickstart</p>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">BSN Term Curriculum Staffing</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>  <center><h1 class="display-3">Welcome to Conflict Resolution Web Application</h1></center>
 
     <!--Add buttons to initiate auth sequence and sign out-->
-    <button id="authorize-button" style="display: none;">Authorize</button>
-    <button id="signout-button" style="display: none;">Sign Out</button>
+    <button class="btn btn-outline-secondary" id="authorize-button" style="display: none;">Authorize</button>
+    <button class="btn btn-outline-secondary" id="signout-button" style="display: none;">Sign Out</button>
 
     
+<center><a class="navbar-brand">Enter name of applicants applied for teaching </a></center>
 
-<form id="frm1">
-  First name: <input type="text" name="fname"><br><br>
-First name: <input type="text" name="fname"><br><br>
-First name: <input type="text" name="fname"><br><br>
-First name: <input type="text" name="fname"><br><br>
-First name: <input type="text" name="fname"><br><br>
-First name: <input type="text" name="fname"><br><br>
-First name: <input type="text" name="fname"><br><br>
-First name: <input type="text" name="fname"><br><br>
-First name: <input type="text" name="fname"><br><br>
+<form id="frm1" class="input-group input-group-sm mb-3">
 
-First name: <input type="text" name="fname"><br><br>
-First name: <input type="text" name="fname"><br><br>
-First name: <input type="text" name="fname"><br><br>
+<div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">1. Faculty Name:</span>
+  </div>
+  <input type="text" class="form-control" name="fname" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+</div>
+<div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">2. Faculty Name:</span>
+  </div>
+  <input type="text" class="form-control" name="fname" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+</div><br>
+<div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">3. Faculty Name:</span>
+  </div>
+  <input type="text" class="form-control" name="fname" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+</div><br>
+<div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">1. Faculty Name:</span>
+  </div>
+  <input type="text" class="form-control" name="fname" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+</div><br>
+<div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">1. Faculty Name:</span>
+  </div>
+  <input type="text" class="form-control" name="fname" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+</div><br>
+<div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">1. Faculty Name:</span>
+  </div>
+  <input type="text" class="form-control" name="fname" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+</div><br>
+<div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">1. Faculty Name:</span>
+  </div>
+  <input type="text" class="form-control" name="fname" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+</div><br>
+<div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">1. Faculty Name:</span>
+  </div>
+  <input type="text" class="form-control" name="fname" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+</div><br>
+<div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">1. Faculty Name:</span>
+  </div>
+  <input type="text" class="form-control" name="fname" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+</div><br>
+<div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">1. Faculty Name:</span>
+  </div>
+  <input type="text" class="form-control" name="fname" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+</div><br>
+
+<div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">1. Faculty Name:</span>
+  </div>
+  <input type="text" class="form-control" name="fname" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+</div><br>
+<div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">1. Faculty Name:</span>
+  </div>
+  <input type="text" class="form-control" name="fname" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+</div><br>
+<div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">1. Faculty Name:</span>
+  </div>
+  <input type="text" class="form-control" name="fname" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+</div><br>
   
 
 
 </form> 
 
-<p>Click "Try it" to display the value of each element in the form.</p>
+<center><p>Click "Try it" to display the Names of faculty according to their rubric score.</p><center>
 
-<button onclick="listMajors()">Try it</button>
-
+<center class="form-inline my-2 my-lg-0" ><button class="btn btn-outline-success my-2 my-sm-0" onclick="listMajors()">Try it</button></center>
 <p id="demo"></p>
 
 
