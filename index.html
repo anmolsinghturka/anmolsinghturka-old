@@ -791,7 +791,10 @@ ar.splice(index,1);
 
 Array.prototype.push.apply(ary,ar);
 
-
+var elm = document.getElementById('content');
+   while (elm.firstChild) {
+   elm.removeChild(elm.firstChild);
+}
                    for (var i = 0; i < 8; i++) {
               
 
@@ -807,6 +810,10 @@ var message = "yes";
                    }
 
   
+var elm2 = document.getElementById('content2');
+   while (elm2.firstChild) {
+   elm2.removeChild(elm2.firstChild);
+}
 for ( var l = 8; l < x.length; l++){
 appendPre2('\n' + ary[l].key + '              ');
 appendPre2(ary[l].sortable);
