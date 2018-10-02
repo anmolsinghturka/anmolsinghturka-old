@@ -2713,7 +2713,7 @@ limitations under the License.
                       for (var i = 0; i < 8; i++) {
 
 
-                          appendPre('\n' + ary[i].key + '              ');
+                          appendPre('\n' + ary[i].key + '    ');
 
                           appendPre(ary[i].sortable);
 
@@ -2731,7 +2731,7 @@ limitations under the License.
                           elm2.removeChild(elm2.firstChild);
                       }
                       for (var l = 8; l < x.length; l++) {
-                          appendPre2('\n' + ary[l].key + '              ');
+                          appendPre2('\n' + ary[l].key + '    ');
                           appendPre2(ary[l].sortable);
 
                           if (ary.findIndex(fruit => fruit.resizeable == "no") == -1) {
